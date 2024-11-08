@@ -1,0 +1,79 @@
+  /* instillinger til alle sidene */
+  body {
+    background-color: #2d0f69;
+    font-size: 15;
+}
+
+/* instillinger til grid */
+.main-container {
+    display: grid;
+    gap: 15px;
+    background-color: #2d0f69;
+    padding: 10px;
+}
+.main-item {
+  background-color: rgb(204, 223, 227);
+  text-align: center;
+  padding: 20px;
+}
+
+/* plasseringen av alle delene av grid'en i index.html */
+.header {
+  grid-column: 1 / span 6;
+  grid-row: 1;
+}
+.info {
+  grid-area: 2 / 2 / 20 / 7
+}
+.menu {
+  grid-row: 2 / 20;
+}
+
+/* når man holder over noen av delene i index.html så vil de lyse opp / bli understreket = interaktivitet */
+.header:hover, .info:hover, .menu:hover {
+  background-color: rgba(204, 223, 227, 0.91);
+  padding: 25spx;
+}
+h1:hover, h3:hover, h2:hover, b:hover, h4:hover {
+  text-decoration: underline;
+}
+
+/* lenker */
+a {
+  text-decoration: none;
+}
+a:hover, a:active {
+  color: purple;
+  text-decoration: underline;
+}
+a:visited {
+  color: purple;
+}
+
+/* endring på list i index.html for at den ser bedre ut */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* får div'en "hover-text" til å være over andre ting */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.item {
+  position: relative;
+  display: inline-block;
+}
+.hover-text {
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
