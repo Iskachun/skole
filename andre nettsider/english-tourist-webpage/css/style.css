@@ -1,0 +1,242 @@
+body {
+    background-color: #043028;
+    font-size: 2.7vw;
+    font-family: "Papyrus", "Couries New";
+}
+
+.item1 {
+    background-image: url("../media/1.jpg");
+    color: white;
+    background-size: cover;
+}
+
+
+.item21 { grid-area: nav1; }
+.item22 { grid-area: nav2; }
+.item23 { grid-area: nav3; }
+.item24 { grid-area: nav4; }
+.item25 { grid-area: nav5; }
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+.grid-container {
+    display: grid;
+    gap: 15px;
+    padding: 0px;
+    margin: 0px;
+    grid-template-areas: 
+        "header header header header header"
+        "nav1 nav2 nav3 nav4 nav5"
+        "main main main main main"
+        "footer footer footer footer footer";
+  }
+  
+  .grid-item {
+    background-color: rgb(218, 233, 215);
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+   .item21, .item22, .item23, .item24, .item25 {
+    background-color: rgba(164, 193, 157, 0.815);
+    border-radius: 15px;
+    position: relative;
+  }
+
+.item21:hover, .item22:hover, .item23:hover, .item24:hover, .item25:hover, .item21:active {
+    background-color: rgba(208, 228, 203, 0.83);
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.link {
+  position: absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 1;
+}
+
+
+.top { grid-area: h; }
+.p1 { grid-area: p1; }
+.p2 { grid-area: p2; }
+.p3 { grid-area: p3; }
+.p4 { grid-area: p4; }
+.i1 { grid-area: i1; }
+.i2 { grid-area: i2; }
+.i3 { grid-area: i3; }
+.i4 { grid-area: i4; }
+.p5 { grid-area: p5; }
+.p6 { grid-area: p6; }
+.p7 { grid-area: p7; }
+.p8 { grid-area: p8; }
+.i5 { grid-area: i5; }
+.i6 { grid-area: i6; }
+.i7 { grid-area: i7; }
+.i8 { grid-area: i8; }
+.grid-container2 {
+    display: grid;
+    gap: 15px;
+    padding: 0px;
+    margin: 0px;
+    grid-template-areas: 
+        "h h"
+        "i1 p1"
+        "p2 i2"
+        "i3 p3"
+        "p4 i4" 
+        "i5 p5"
+        "p6 i6"
+        "i7 p7"
+        "p8 i8"   
+    ;
+  }
+
+
+
+  .i1, .i2, .i3, .i4, .i5, .i6 {
+    width: 100%;
+    height: 100%;
+  }
+ 
+  .img1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img2 {
+    width: 49%;
+  }
+
+  .top2 { grid-area: h2;}
+  .i12 { grid-area: i12; }
+.p12 { grid-area: p12; }
+.i34 { grid-area: p34; }
+.p34 { grid-area: p34; }
+  .i56 { grid-area: i56; }
+  .p56 { grid-area: p56; }
+.grid-container3 {
+    display: grid;
+    gap: 0px;
+    padding: 0px;
+    margin: 0px;
+    grid-template-areas: 
+        "h2 h2"
+        "i12 i12"
+        "p12 p12"
+        "i34 i34"
+        "p34 p34"
+        "i56 i56"
+        "p56 p56"
+    ;
+  }
+
+  .i12, .i34, .i56, .p12, .p34, .p56 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(164, 193, 157);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 0;
+    left: -100px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: rgba(208, 228, 203, 0.83)}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+    font-size: 3vw;
+  }
+  
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: rgb(198, 212, 195);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;  
+    z-index: 1;
+  }
+
+  .dropdown2:hover .dropdown-content2 {
+    display: block;
+    background-color: rgb(198, 212, 195);
+  }
+
+ ol {
+    list-style-type: upper-roman;
+    margin: 0 auto;
+    display: table;
+    text-align: left;
+ }
+
+
+ .video { grid-area: v;}
+ .infobox { grid-area: inf; }
+.funfact1 { grid-area: ff1; }
+.funfact2 { grid-area: ff2; }
+.funfact3 { grid-area: ff3; }
+.picture1 { grid-area: pp1; }
+.picture2 { grid-area: pp2; }
+.picture3 { grid-area: pp3; }
+
+.grid-container4 {
+   display: grid;
+   gap: 0px;
+   padding: 0px;
+   margin: 0px;
+   grid-template-areas: 
+       "v v v v inf"
+       "ff1 pp1 pp1 pp1 ff2"
+       "pp2 pp2 ff3 pp3 pp3"
+   ;
+ }
+
+ .infobox, .funfact1, .funfact2, .funfact3 {
+    border: 3px solid rgba(164, 193, 157, 0.815);
+    border-radius: 15px;
+  }
+  .item21, .item22, .item23, .item24, .item25 {
+    background-color: rgba(164, 193, 157, 0.815);
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  .video {
+    background-color: rgba(164, 193, 157, 0.815);
+
+  }
