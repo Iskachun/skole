@@ -1,61 +1,75 @@
   /* instillinger til alle sidene */
   body {
-    background-color: #2d0f69;
-    font-size: 15;
+    background-color: #3b2248;
+    font-size: 3.0vw;
+    font-family: "Audiowide";
 }
 
 /* instillinger til grid */
+.header { grid-area: h; }
+.nav { grid-area: nav;}
 .main-container {
     display: grid;
     gap: 15px;
-    background-color: #2d0f69;
     padding: 10px;
+    grid-template-areas:
+      "h h h h"
+      "nav .. .. .."
+    ;
 }
 .main-item {
-  background-color: rgb(204, 223, 227);
+  background-color: rgb(203, 215, 184);
   text-align: center;
   padding: 20px;
 }
 
-/* plasseringen av alle delene av grid'en i index.html */
-.header {
-  grid-column: 1 / span 6;
-  grid-row: 1;
-}
-.info {
-  grid-area: 2 / 2 / 20 / 7
-}
-.menu {
-  grid-row: 2 / 20;
-}
-
-/* når man holder over noen av delene i index.html så vil de lyse opp / bli understreket = interaktivitet */
-.header:hover, .info:hover, .menu:hover {
-  background-color: rgba(204, 223, 227, 0.91);
-  padding: 25spx;
-}
-h1:hover, h3:hover, h2:hover, b:hover, h4:hover {
-  text-decoration: underline;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(176, 186, 160);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border: 5px solid black;
 }
 
-/* lenker */
-a {
+.sidenav a, .sidenav h2 {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-}
-a:hover, a:active {
-  color: purple;
-  text-decoration: underline;
-}
-a:visited {
-  color: purple;
+  color: black;
+  display: block;
+  transition: 5.5s;
 }
 
-/* endring på list i index.html for at den ser bedre ut */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.sidenav a:hover {
+  color: #f1f1f1;
 }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+}
+
+.closebtn, .openbtn {
+  font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+
+
+
+
+
+
 
 
 /* får div'en "hover-text" til å være over andre ting */
