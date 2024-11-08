@@ -31,7 +31,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(176, 186, 160);
+  background-color: rgb(198, 208, 181);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -82,6 +82,7 @@
 .item4 { grid-area: four; }
 .item5 { grid-area: five;}
 .item6 { grid-area: six; }
+.vid { grid-area: vid; }
 .end { grid-area: last; }
 .container3 {
   display: grid;
@@ -91,6 +92,7 @@
     "h h h"
     "one two three"
     "four five six"
+    "vid vid vid"
     "last last last"
   ;
 }
