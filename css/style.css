@@ -67,9 +67,37 @@
 
 
 
+.container2 {
+  display: grid;
+  gap: 15px;
+  padding: 10px;
+}
 
 
+.top { grid-area: h; }
+.item1 { grid-area: one;}
+.item2 { grid-area: two; }
+.item3 { grid-area: three;}
+.item4 { grid-area: four; }
+.item5 { grid-area: five;}
+.item6 { grid-area: six; }
+.end { grid-area: last; }
+.container3 {
+  display: grid;
+  gap: 15px;
+  padding: 10px;
+  grid-template-areas: 
+    "h h h"
+    "one two three"
+    "four five six"
+    "last last last"
+  ;
+}
 
+
+a {
+  color: rgb(18, 81, 241);
+}
 
 
 /* får div'en "hover-text" til å være over andre ting */
@@ -78,7 +106,7 @@ img {
   width: 100%;
   height: auto;
 }
-.item {
+.item, .item1, .item2, .item3, .item4, .item4, .item5, .item6 {
   position: relative;
   display: inline-block;
 }
