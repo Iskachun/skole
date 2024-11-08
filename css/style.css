@@ -1,20 +1,21 @@
   /* instillinger til alle sidene */
   body {
     background-color: #3b2248;
-    font-size: 15px;
+    font-size: 18px;
     font-family: "Audiowide";
 }
 
 /* instillinger til grid */
 .header { grid-area: h; }
 .nav { grid-area: nav;}
+.main { grid-area: main; }
 .main-container {
     display: grid;
     gap: 15px;
     padding: 10px;
     grid-template-areas:
       "h h h h"
-      "nav .. .. .."
+      "nav main main main"
     ;
 }
 .main-item {
