@@ -15,11 +15,22 @@
     gap: 15px;
     padding: 10px;
     grid-template-areas:
-      "h h h h"
+      "nav h h h"
       "nav main main main"
       "nav more more more"
     ;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 800px;
 }
+
+@media (max-width: 1000px) {
+  .main-container {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
 .main-item {
   background-color: rgb(203, 215, 184);
   text-align: center;
