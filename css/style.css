@@ -1,6 +1,6 @@
   /* instillinger til alle sidene */
   body {
-    background-color: #3b2248;
+    background-color: #440268;
     font-size: 18px;
     font-family: "Audiowide";
 }
@@ -32,7 +32,7 @@
 }
 
 .main-item {
-  background-color: rgb(203, 215, 184);
+  background-color: rgb(229, 234, 186);
   text-align: center;
   padding: 20px;
 }
@@ -44,7 +44,6 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(198, 208, 181);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -63,16 +62,7 @@
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  margin-left: 50px;
-}
 
-.closebtn {
-  font-size: 40px;
-}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -192,4 +182,61 @@ img {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+
+
+
+.sidebar {
+  height: 100%;
+  width: 85px;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  white-space: nowrap;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  white-space: wrap;
+}
+
+.material-icons,
+.icon-text {
+  vertical-align: middle;
+  
+}
+
+.material-icons {
+  padding-bottom: 3px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 100px;
+  
+  white-space: wrap;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+      padding-top: 15px;
+  }
+  .sidebar a {
+      font-size: 18px;
+  }
 }
