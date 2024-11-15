@@ -2,7 +2,7 @@
   body {
     background-color: #440268;
     font-size: 18px;
-    font-family: "Audiowide";
+    font-family: "Aclonica";
 }
 
 /* instillinger til grid */
@@ -36,39 +36,6 @@
   text-align: center;
   padding: 20px;
 }
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  border: 5px solid black;
-}
-
-.sidenav a, .sidenav h2 {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  color: black;
-  display: block;
-  transition: 5.5s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-}
-
-
 
 
 .container2 {
@@ -185,58 +152,27 @@ img {
 }
 
 
+/* her prøvde jeg å animere navigation bar, det gikk ikke som jeg ville, men her er koden hvis jeg blir interessert i denne idèen igjen */
 
 
 .sidebar {
-  height: 100%;
-  width: 85px;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  /*width: 25%;
   white-space: nowrap;
+  overflow-x: hidden;
+  border: 5px solid black;
+  animation: close 2s;*/
 }
 
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  display: block;
-  transition: 0.3s;
-  
+@keyframes close {
+  from {z-index: 1; white-space: wrap; width: 200%;}
+  to {z-index: 0; white-space: nowrap; width: 25%;}
 }
 
-.sidebar a:hover {
-  color: #f1f1f1;
-  white-space: wrap;
+@keyframes open {
+  from {z-index: 0; white-space: nowrap; width: 25%;}
+  to {z-index: 1; white-space: wrap; width: 200%;}
 }
 
-.material-icons,
-.icon-text {
-  vertical-align: middle;
-  
-}
-
-.material-icons {
-  padding-bottom: 3px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-  margin-left: 100px;
-  
-  white-space: wrap;
-}
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
-  .sidebar {
-      padding-top: 15px;
-  }
-  .sidebar a {
-      font-size: 18px;
-  }
+.sidebar:hover {
+  /*animation: open 2s;*/
 }
