@@ -7,7 +7,7 @@
 
 button, select, #taskInput {
   font-family: inherit;
-  font-size: inherit;
+  font-size: 20px;
 }
 
 a {
