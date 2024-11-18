@@ -50,17 +50,6 @@
   /*stein saks papir */
   let humanScore = 0
 let computerScore = 0
-/*
-let doc = document.getElementById("choice");
-let player_move;
-function onChange() {
-  let val = doc.value;
-  player_move = val;
-  document.getElementById("result").innerHTML = player_move;
-    
-}
-doc.onChange = onChange;
-onChange();*/
  
 function play() {
     let player = document.getElementById("choice").value;
@@ -81,16 +70,22 @@ function play() {
     }
     else if (player === "rock" & robot === "scissors") {
       document.getElementById("result").innerHTML = "You won!";
+      humanScore++;
     }
     else if (player === "paper" & robot === "rock") {
       document.getElementById("result").innerHTML = "You won!";
+      humanScore++;
     }
     else if (player === "scissors" & robot === "paper") {
       document.getElementById("result").innerHTML = "You won!";
+      humanScore++;
     }
     else {
       document.getElementById("result").innerHTML = "You lost!";
+      computerScore++;
     }
+    document.getElementById("pl_score").innerHTML = "Your score: " + humanScore;
+    document.getElementById("cmp_score").innerHTML = "Computer score: " + computerScore;
 }
 
  
