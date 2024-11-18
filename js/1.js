@@ -86,6 +86,7 @@ function play() {
     }
     document.getElementById("pl_score").innerHTML = "Your score: " + humanScore;
     document.getElementById("cmp_score").innerHTML = "Computer score: " + computerScore;
+    document.getElementById("comp").innerHTML = robot;
 }
 
  
