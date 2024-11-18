@@ -5,6 +5,11 @@
     font-family: "Aclonica";
 }
 
+button, select, #taskInput {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 a {
   text-decoration: none;
   color: black;

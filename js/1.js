@@ -44,3 +44,53 @@
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
   }
+
+
+
+  /*stein saks papir */
+  let humanScore = 0
+let computerScore = 0
+/*
+let doc = document.getElementById("choice");
+let player_move;
+function onChange() {
+  let val = doc.value;
+  player_move = val;
+  document.getElementById("result").innerHTML = player_move;
+    
+}
+doc.onChange = onChange;
+onChange();*/
+ 
+function play() {
+    let player = document.getElementById("choice").value;
+    
+    document.getElementById("result").innerHTML = player;
+    console.log(player);
+    const choices = ["rock", "paper", "scissors"];
+    let robot = choices[Math.floor(Math.random() * 3)];
+    if (choices[0] != player && choices[1] != player && choices[2] != player) {
+        document.getElementById("error_msg2").innerHTML = player;
+        return;
+    }
+    document.getElementById("result").innerHTML = player;
+    document.getElementById("error_msg2").innerHTML = "";
+    if (player === robot) {
+      document.getElementById("result").innerHTML = "Tie!";
+
+    }
+    else if (player === "rock" & robot === "scissors") {
+      document.getElementById("result").innerHTML = "You won!";
+    }
+    else if (player === "paper" & robot === "rock") {
+      document.getElementById("result").innerHTML = "You won!";
+    }
+    else if (player === "scissors" & robot === "paper") {
+      document.getElementById("result").innerHTML = "You won!";
+    }
+    else {
+      document.getElementById("result").innerHTML = "You lost!";
+    }
+}
+
+ 
