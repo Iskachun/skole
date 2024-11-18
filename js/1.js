@@ -54,6 +54,7 @@ let computerScore = 0
 function play() {
     let player = document.getElementById("choice").value;
     
+    
     document.getElementById("result").innerHTML = player;
     console.log(player);
     const choices = ["rock", "paper", "scissors"];

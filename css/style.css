@@ -53,6 +53,10 @@ a:hover {
   padding: 20px;
 }
 
+.item, .main-item {
+  border-radius: 5px;
+}
+
 
 .container2 {
   display: grid;
