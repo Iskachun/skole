@@ -12,12 +12,21 @@
         <a href="index.html">home</a>
     </div>
  <div class="main-item item"><br>
-    <p><u>Choose your move:</u></p>
+    <p><u>Choose your move:</u></p><!--
     <select id="choice">
         <option value="rock">Rock</option>
         <option value="paper">Paper</option>
         <option value="scissors">Scissors</option>
-    </select><br><br>
+    </select>-->
+    <form>
+        <input type="radio" id="rock" name="game" value="rock">
+  <label for="rock">Rock</label><br>
+  <input type="radio" id="paper" name="game" value="paper">
+  <label for="paper">Paper</label><br>
+  <input type="radio" id="scissors" name="game" value="scissors">
+  <label for="scissors">Scissors</label>
+    </form>
+    <br><br>
     <button id="play" onclick="play()"> Play</button>
     <p id="error_msg2" style="color:red;"></p>
     <br>

@@ -23,7 +23,8 @@ a:hover {
 .header { grid-area: h; }
 .nav { grid-area: nav;}
 .main { grid-area: main; }
-.more { grid-area: more; }
+.contact { grid-area: cont; }
+.footer { grid-area: foot; }
 .main-container {
     display: grid;
     gap: 15px;
@@ -31,12 +32,13 @@ a:hover {
     grid-template-areas:
       "nav h h h"
       "nav main main main"
-      "nav more more more"
+      "nav cont cont cont"
+      "foot foot foot foot"
     ;
 }
 .main-container, .container2 {
     margin: auto;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 @media (max-width: 1000px) {

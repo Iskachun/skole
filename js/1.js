@@ -52,15 +52,19 @@
 let computerScore = 0
  
 function play() {
-    let player = document.getElementById("choice").value;
-    
+    /*let player = document.getElementById("choice").value;
+    */
+    let player = "";
+    if (document.getElementById("rock").checked) player="rock";
+    else if (document.getElementById("paper").checked) player="paper";
+    else if (document.getElementById("scissors").checked) player="scissors";
     
     document.getElementById("result").innerHTML = player;
     console.log(player);
     const choices = ["rock", "paper", "scissors"];
     let robot = choices[Math.floor(Math.random() * 3)];
     if (choices[0] != player && choices[1] != player && choices[2] != player) {
-        document.getElementById("error_msg2").innerHTML = player;
+        document.getElementById("error_msg2").innerHTML = "Please choose your move";
         return;
     }
     document.getElementById("result").innerHTML = player;
