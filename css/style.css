@@ -51,7 +51,7 @@ a:hover {
 .main-item {
   /*background-color: rgb(229, 234, 186);*/
   background-image: linear-gradient(to bottom right, rgb(255, 183, 0), rgb(247, 234, 0));
-  text-align: center;
+  /*text-align: center;*/
   padding: 20px;
 }
 
