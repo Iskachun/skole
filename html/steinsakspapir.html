@@ -3,7 +3,7 @@
 <head>
 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 <link rel="stylesheet" href="../css/style.css">
-<title>noe</title>
+<title>Rock Paper Scissors</title>
 </head>
 <body>
     <div class="container2">
@@ -12,19 +12,20 @@
         <a href="index.html">home</a>
     </div>
  <div class="main-item item"><br>
-    <p><u>Choose your move:</u></p><!--
-    <select id="choice">
-        <option value="rock">Rock</option>
-        <option value="paper">Paper</option>
-        <option value="scissors">Scissors</option>
-    </select>-->
+    <p><u>Choose your move:</u></p>
     <form>
-        <input type="radio" id="rock" name="game" value="rock">
-  <label for="rock">Rock</label><br>
-  <input type="radio" id="paper" name="game" value="paper">
-  <label for="paper">Paper</label><br>
-  <input type="radio" id="scissors" name="game" value="scissors">
-  <label for="scissors">Scissors</label>
+    <label class="container">Rock
+    <input type="rock" name="rock" value="rock">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Paper
+    <input type="paper" name="paper" value="paper">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Scissors
+    <input type="scissors" name="scissors" value="scissors">
+    <span class="checkmark"></span>
+    </label>
     </form>
     <br><br>
     <button id="play" onclick="play()"> Play</button>
