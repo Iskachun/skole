@@ -174,33 +174,6 @@ img {
 }
 
 
-/* her prøvde jeg å animere navigation bar, det gikk ikke som jeg ville, men her er koden hvis jeg blir interessert i denne idèen igjen */
-
-
-.sidebar {
-  /*width: 25%;
-  white-space: nowrap;
-  overflow-x: hidden;
-  border: 5px solid black;
-  animation: close 2s;*/
-}
-
-@keyframes close {
-  from {z-index: 1; white-space: wrap; width: 200%;}
-  to {z-index: 0; white-space: nowrap; width: 25%;}
-}
-
-@keyframes open {
-  from {z-index: 0; white-space: nowrap; width: 25%;}
-  to {z-index: 1; white-space: wrap; width: 200%;}
-}
-
-.sidebar:hover {
-  /*animation: open 2s;*/
-}
-
-
-
 /*styler radio buttons (til rock paper scissors)*/
 .container {
   display: block;
